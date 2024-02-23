@@ -1,7 +1,7 @@
 # stage 1 BUILD PARA CONSEGUIR EL DIST
 FROM node as faseBuild
 RUN npm install -g --silent @angular/cli
-COPY aplicacion/myapp/. /app/.
+COPY ./aplicacion/myapp/. /app/.
 WORKDIR /app
 RUN ng build
 
